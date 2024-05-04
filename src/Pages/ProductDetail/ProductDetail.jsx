@@ -32,14 +32,14 @@ const ProductDetail = () => {
         <Loader />
       ) : (
         <div>
-          <h2>product detail</h2>
-          
-          <ProductCard 
-          product={product}
-          flex={true}
-          renderDesc={true}
-          renderAdd={true}
-          />
+          <h2>product details</h2>
+
+          {/* <ProductCard
+            product={product}
+            flex={true}
+            renderDesc={true}
+            renderAdd={true}
+          /> */}
         </div>
       )}
     </LayOut>
