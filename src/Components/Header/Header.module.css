@@ -131,19 +131,29 @@
   gap: 5px;
 }
 .lower__container ul li {
-  padding: 8px;
+  padding: 4px;
 }
 .lower__container a {
   text-decoration: none;
   color: white;
   display: flex;
+  font-size: 14px;
+}
+.lower__container ul li:hover,
+.lower__container select:hover,
+.lower__container span:hover {
+  cursor: pointer;
+}
+.lower__container span {
+  font-size: 14px;
+  /* padding-top: 5px; */
 }
 .lower__container select {
   background-color: #232f3e;
   border: none;
   color: white;
+  font-size: 14px;
   /* padding: 10px; */
-  font-weight: bold;
 }
 .lower__container ul li:first-child {
   display: flex;

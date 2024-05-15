@@ -46,8 +46,8 @@ const ProductCard = ({ product, flex, renderDesc, renderAdd }) => {
           </div>
         )}
         <div className={classes.rating}>
-          <Rating value={rating.rate} precision={0.1} />
-          <small>{rating.count}</small>
+          <Rating value={rating?.rate} precision={0.1} />
+          <small>{rating?.count}</small>
         </div>
         <div>
           <CurrencyFormat amount={price} />

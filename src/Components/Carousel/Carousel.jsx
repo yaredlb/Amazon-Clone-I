@@ -12,9 +12,12 @@ const CarouselEffect = () => {
         infiniteLoop={true}
         showIndicators={false}
         showThumbs={false}
+        interval={5000}
+        showStatus={false}
+        
       >
         {img.map((imageItemLink) => {
-          return <img src={imageItemLink} />;
+          return <img key={imageItemLink} src={imageItemLink} />;
         })}
       </Carousel>
       <div className={classes.hero__img}></div>

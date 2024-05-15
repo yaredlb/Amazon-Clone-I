@@ -17,7 +17,7 @@ const ProductDetail = () => {
     axios
       .get(`${productUrl}/products/${productId}`)
       .then((res) => {
-        // console.log(res.data)
+        console.log(res.data);
         setProduct(res.data);
         setIsLoading(false);
       })
@@ -32,15 +32,15 @@ const ProductDetail = () => {
         <Loader />
       ) : (
         <div>
-          <h2>product details</h2>
+          {/* <h2>product details</h2> */}
 
-          {/* <ProductCard
+          <ProductCard
             product={product}
             flex={true}
             renderDesc={true}
             renderAdd={true}
-          /> */}
-        </div>
+          />
+         </div>
       )}
     </LayOut>
   );
