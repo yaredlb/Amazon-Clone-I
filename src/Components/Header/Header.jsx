@@ -18,64 +18,62 @@ const Header = () => {
   // console.log(basket.length)
   return (
     <section className={classes.fixed}>
-      {/* <section> */}
-        <div className={classes.header__container}>
-          <div className={classes.logo__container}>
-            <Link to="/">
-              <img src={amazonLogo} alt="amazon logo" />
-            </Link>
-            <div className={classes.delivery}>
-              <Link to="#">
-                <span>
-                  <SlLocationPin />
-                </span>
-                <div>
-                  <p>Delivering to</p>
-                  <span>Colorado</span>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className={classes.search}>
-            <select name="" id="">
-              <option value="">All</option>
-            </select>
-            <input type="text" name="" id="" placeholder="Search Amazon" />
-            <BsSearch size={38} />
-          </div>
-          <div className={classes.order__container}>
-            <Link to="#" className={classes.language}>
-              <img src={usaFlag} alt="USA flag" />
-              <select name="" id="">
-                <option value="">EN</option>
-              </select>
-            </Link>
-            <Link to={!user && "/auth"}>
+      <div className={classes.header__container}>
+        <div className={classes.logo__container}>
+          <Link to="/">
+            <img src={amazonLogo} alt="amazon logo" />
+          </Link>
+          <div className={classes.delivery}>
+            <Link to="#">
+              <span>
+                <SlLocationPin />
+              </span>
               <div>
-                {user ? (
-                  <>
-                    <p>Hello, {user?.email?.split("@")[0]} </p>
-                    <span onClick={() => auth.signOut()}>Sign out</span>
-                  </>
-                ) : (
-                  <>
-                    <p>Hello, sign in</p>
-                    <span>Account & Lists</span>
-                  </>
-                )}
+                <p>Delivering to</p>
+                <span>Colorado</span>
               </div>
-            </Link>
-            <Link to="/orders">
-              <p>Returns</p>
-              <span>& Orders</span>
-            </Link>
-            <Link to="/cart" className={classes.cart}>
-              <BiCart size={35} />
-              <span>{totalItem}</span>
             </Link>
           </div>
         </div>
-      {/* </section> */}
+        <div className={classes.search}>
+          <select name="" id="">
+            <option value="">All</option>
+          </select>
+          <input type="text" name="" id="" placeholder="Search Amazon" />
+          <BsSearch size={38} />
+        </div>
+        <div className={classes.order__container}>
+          <Link to="#" className={classes.language}>
+            <img src={usaFlag} alt="USA flag" />
+            <select name="" id="">
+              <option value="">EN</option>
+            </select>
+          </Link>
+          <Link to={!user && "/auth"}>
+            <div>
+              {user ? (
+                <>
+                  <p>Hello, {user?.email?.split("@")[0]} </p>
+                  <span onClick={() => auth.signOut()}>Sign out</span>
+                </>
+              ) : (
+                <>
+                  <p>Hello, sign in</p>
+                  <span>Account & Lists</span>
+                </>
+              )}
+            </div>
+          </Link>
+          <Link to="/orders">
+            <p>Returns</p>
+            <span>& Orders</span>
+          </Link>
+          <Link to="/cart" className={classes.cart}>
+            <BiCart size={35} />
+            <span>{totalItem}</span>
+          </Link>
+        </div>
+      </div>
       <LowerHeader />
     </section>
   );

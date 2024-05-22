@@ -6,10 +6,10 @@ export const categoryInfos = [
         imgLink: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
     },
     {
-        title: "Pierced Owl Rose Gold Plated Stainless Steel Double",
+        title: "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
         name: "Jewelery",
         category: "jewelery",
-        imgLink: "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+        imgLink: "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
     },
     
     {

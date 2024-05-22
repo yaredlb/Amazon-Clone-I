@@ -7,7 +7,7 @@ const LayOut = ({ children }) => {
     <div>
       <Header />
       {children}
-      <Foooter />
+      {/* <Foooter /> */}
     </div>
   );
 };

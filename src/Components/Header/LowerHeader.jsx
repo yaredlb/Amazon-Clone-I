@@ -1,73 +1,81 @@
 import React from "react";
 import classes from "./Header.module.css";
 import { AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom";
+
+
+
 const LowerHeader = () => {
   return (
     <div className={classes.lower__container}>
       <ul>
-          <li>
-        <a href="#">
-            <AiOutlineMenu />
-            {/* <span>All</span> */}
-            <span>All</span>
-        </a>
-          </li>
-          {/* <p>All</p> */}
         <li>
-          <a href="#">
+          <Link to="#">
+            <AiOutlineMenu />
+            <span>All</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="#">
             <select name="" id="">
               <option value="">Medical Care</option>
             </select>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <Link to="#">
             <select name="" id="">
               <option value="">Groceries</option>
             </select>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">Best Sellers</a>
+          <Link to="#">Best Sellers</Link>
         </li>
         <li>
-          <a href="#">Amazon Basics</a>
+          <Link to="#">Amazon Basics</Link>
         </li>
         <li>
-          <a href="#">Music</a>
+          <Link to="#">Music</Link>
         </li>
         <li>
-          <a href="#">New Releases</a>
+          <Link to="#">New Releases</Link>
         </li>
         <li>
-          <a href="#">
+          <Link to="#">
             <select name="" id="">
               <option value="">Prime</option>
             </select>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">Customer Serives</a>
+          <Link to="#">Customer Serives</Link>
         </li>
         <li>
-          <a href="#">Today's Deals</a>
+          <Link to="#">Today's Deals</Link>
         </li>
         <li>
-          <a href="#">Amazon Home</a>
+          <Link to="#">Amazon Home</Link>
         </li>
         <li>
-          <a href="#">Registry</a>
+          <Link to="#">Registry</Link>
         </li>
         <li>
-          <a href="#">Books</a>
+          <Link to="#">Books</Link>
         </li>
-        {/* <li><a href="#">Pharmacy</a></li> */}
-        {/* <li><a href="#">
+        <li>
+          <Link to="#">Pharmacy</Link>
+        </li>
+        <li>
+          <Link to="#">
             <select name="" id="">
-                <option value="">Gift Cards</option>
+              <option value="">Gift Cards</option>
             </select>
-        </a></li> */}
-        {/* <li><a href="#">Smart Home</a></li> */}
+          </Link>
+        </li>
+        <li>
+          <Link to="#">Smart Home</Link>
+        </li>
       </ul>
     </div>
   );
